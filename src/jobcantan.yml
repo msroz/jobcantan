@@ -1,0 +1,3 @@
+slack_token: xoxp-<SLACK-LEGACY-TOKEN> # <required>
+slack_channel_id: C0XXXXX # <required>
+default_message: Hello World # <optional>
