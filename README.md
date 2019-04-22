@@ -2,6 +2,8 @@
 
 CLI for punching in/out by Jobcan via Slack command.
 
+[![Build Status](https://travis-ci.org/msroz/jobcantan.svg?branch=master)](https://travis-ci.org/msroz/jobcantan)
+
 ## Installation
 
 ### homebrew
@@ -27,6 +29,27 @@ $ make install
 $ jobcantan --init
 $ vim $HOME/.config/jobcantan.yml
 ```
+
+### jobcantan.yml
+
+```yaml
+slack_token: xoxp-xxxxxxxx-xxxxxxxx-xxxxxxxx-xxxxxxxx # required
+slack_channel_id: XXXYYYZZZ # required
+default_message: Hello Jobcan # optional
+```
+
+[Types of tokens - Slack](https://api.slack.com/docs/token-types)
+
+
+### Punching in/out
+
+```console
+$ jobcantan
+```
+
+<img src="./slack.png" alt="slack.png" width="280" />
+
+### Help
 
 ```console
 $ jobcantan --help
